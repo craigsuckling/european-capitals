@@ -25,7 +25,7 @@ export default function Home() {
     
       
         
-          {'EuropeanCapitalsFinder'}
+          {"European Capitals Finder"}
         
         
         
