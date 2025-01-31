@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import CountrySelect from '../components/CountrySelect';
@@ -26,7 +25,7 @@ export default function Home() {
     
       
         
-          European Capitals Finder
+          {'European Capitals Finder'}
         
         
         
@@ -41,4 +40,3 @@ export default function Home() {
     
   );
 }
-
