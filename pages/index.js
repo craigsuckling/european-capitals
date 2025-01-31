@@ -22,21 +22,14 @@ export default function Home() {
   };
 
   return (
-    
-      
-        
-          {'European Capitals Finder'}
-        
-        
-        
-        
-        {loading && Loading...}
-        {capital && !loading && (
-          
-            Capital: {capital}
-          
-        )}
-      
-    
-  );
+  <div>
+    <h1>European Capitals Finder</h1>
+    {loading && <p>Loading...</p>}
+    {capital && !loading && (
+      <div>
+        <p>Capital: {capital}</p>
+      </div>
+    )}
+  </div>
+);
 }
