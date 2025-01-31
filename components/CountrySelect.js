@@ -23,23 +23,21 @@ export default function CountrySelect({ onSelect }) {
   };
 
   return (
-    
+    <form onSubmit={handleSubmit}>
       <select
         value={selectedCountry}
         onChange={(e) => setSelectedCountry(e.target.value)}
         className={styles.select}
         required
       >
-        Select a country
+        <option value="">Select a country</option>
         {COUNTRIES.map(country => (
-          
+          <option key={country} value={country}>
             {country}
-          
+          </option>
         ))}
-      
-      
-        Find Capital
-      
-    
+      </select>
+      <button type="submit">Find Capital</button>
+    </form>
   );
 }
